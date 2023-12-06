@@ -1,0 +1,131 @@
+body {
+  font-family: 'Poppins';
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Adjust alignment as needed */
+  min-height: 100vh;
+}
+
+.container > div {
+  flex: 1;
+  padding: 20px;
+ 
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.item-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-links a {
+  text-decoration: none;
+  color: #eee6e6;
+  padding: 4px;
+  padding-bottom: 1px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.item-links a:hover {
+  text-decoration: underline;
+}
+
+.image-display {
+  flex: 1;
+}
+
+.image-display img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-display {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-display p {
+  font-size: 18px;
+  color: #333;
+}
+.w3-center .w3-animate-top
+{
+  display: 'inline';
+  color: black;
+ 
+}
+@media only screen and (max-device-width: 430px) and (orientation: portrait) {
+  .container {
+    display: contents;
+    flex-direction: column;
+    height: 0%;
+    width: 22rem;
+  }
+
+  .container .content-display {
+    flex: auto;
+    padding: 10px;
+  }
+
+  .container > div {
+    width: 18rem;
+  }
+
+  .content-display .h2 {
+    font-size: 1px;
+  }
+
+  .item-links {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+  }
+
+  .item-links a {
+    font-size: 13px;
+    padding: 11px;
+    text-decoration: none;
+    color: #eee6e6;
+    cursor: pointer;
+  }
+
+  .item-links a:hover {
+    text-decoration: underline;
+  }
+
+  .image-display {
+    display: none;
+  }
+
+  .container h1 {
+    font-size: larger;
+  }
+
+  .responsive-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+
+  .w3-container .w3-center .w3-animate-bottom li {
+    font-size: 1rem;
+  }
+
+  .w3-animate-bottom .custom-list li {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .custom-list li {
+    font-size: 18px;
+  }
+}

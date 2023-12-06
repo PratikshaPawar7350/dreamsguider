@@ -1,0 +1,44 @@
+/* Add this to your CSS file */
+
+.custom-list {
+    list-style-type: square; /* Change the list style */
+    
+    font-family: 'Poppins'; ; /* Change 'YourFont' to the desired font family */
+   /* transition:   color 0.3s ease, font-size 0.3s ease;   Add a transition effect for color change */
+  }
+  
+  .custom-list li {
+    /* Change the font size */
+    color: #333; 
+/* Change the default color */
+  }
+  
+  /*.custom-list li:hover {
+    color: #007bff; /* Change the color on hover 
+  }*/
+  .section .content-display .h2
+  {
+    text-decoration:none;
+
+  }
+  /* Add this to your CSS file */
+
+
+  .custom-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0;
+  }
+  
+  .custom-list li {
+    margin: 0 10px;
+    padding: 4px; /* Adjust the margin as needed */
+  }
+  .section.underline {
+    border-bottom: 2px solid #ffcc00; /* Customize the underline color */
+    padding-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  

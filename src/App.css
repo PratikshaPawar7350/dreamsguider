@@ -1,0 +1,85 @@
+/* App.css */
+body {
+  font-family: 'Poppins';font-size: 22px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 100vh;
+  transition: background-color 0.3s;
+}
+
+.section {
+  flex: 1;
+  padding: 20px;
+  
+  margin: 10px;
+}
+
+.item-creation {
+  background-color: #8f6666;
+}
+
+.item-creation a {
+  font-size: 28px;
+  padding: 22px;
+  text-decoration: none; /* Remove default link underline */
+  color: #333; /* Adjust link color */
+  cursor: pointer;
+}
+
+.item-creation a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.image-display img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-display p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Add this to your CSS file */
+.item-links {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  gap: 8px; /* Adjust the spacing between items */
+}
+
+.item-links a {
+  text-decoration: none; /* Remove default link underline */
+  color: #333; /* Adjust link color */
+  padding: 4px;
+  padding-bottom: 1px;
+  font-size: 24px; /* Adjust font size */
+  cursor: pointer;
+}
+
+.item-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Add background colors for each item */
+.item-links a.A.selected {
+  background-color: lightblue;
+}
+
+.item-links a.B.selected {
+  background-color: lightgreen;
+}
+
+.item-links a.C.selected {
+  background-color: lightcoral;
+}
+
+.item-links a.D.selected {
+  background-color: lightpink;
+}
+
+.section.item-creation.bg-blue {
+  background-color: lightblue;
+}
